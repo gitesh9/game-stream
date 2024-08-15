@@ -5,7 +5,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, run the development server:
 
 ```bash
-npm run dev
+npm run dev 
+#and 
+ngrok http 3000 or ngrok http --domain=mosquito-fleet-newly.ngrok-free.app 3000 (for using webhooks in development)
+
 # or
 yarn dev
 # or

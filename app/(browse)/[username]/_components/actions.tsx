@@ -47,7 +47,7 @@ export const Actions = ({ isFollowing, userId }: ActionsProps) => {
 
 	const handleBlock = () => {
 		startTransition(() => {
-			onUnBlock(userId)
+			onBlock(userId)
 				.then((data) =>
 					toast.success(`Blocked the user ${data.blocked.username}`)
 				)
@@ -61,7 +61,6 @@ export const Actions = ({ isFollowing, userId }: ActionsProps) => {
 				{isFollowing ? "Unfollow" : "Follow"}
 			</Button>
 			<Button disabled={isPending} onClick={handleBlock}>
-				{/* {isFollowing ? "Unfollow" : "Follow"} */}
 				block User
 			</Button>
 		</>

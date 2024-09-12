@@ -33,7 +33,7 @@ export const VolumeControl = ({
 	};
 
 	return (
-		<div className="felx items-center gap-2">
+		<div className="flex items-center gap-2">
 			<Hint label={label} asChild>
 				<button
 					onClick={onToggle}

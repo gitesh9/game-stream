@@ -24,7 +24,6 @@ const CreatorLayout = async ({ params, children }: CreatorLayoutProps) => {
 				<Sidebar />
 				<Container>{children}</Container>
 			</div>
-			;
 		</>
 	);
 };

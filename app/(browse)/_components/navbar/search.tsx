@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-type Props = {};
-export const Search = ({}: Props) => {
+
+export const Search = () => {
 	const router = useRouter();
 	const [value, setValue] = useState("");
 

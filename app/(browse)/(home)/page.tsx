@@ -1,11 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
+import { Suspense } from "react";
+import { Results, ResultsSkeleton } from "./_components/results";
 
 export default function Home() {
 	return (
-		<div>
-			<h1>Home Page</h1>
+		<div className="h-full p-8 max-w-screen-2xl mx-auto">
+			<Suspense fallback={<ResultsSkeleton />}>
+				<Results />
+			</Suspense>
 		</div>
 	);
 }
